@@ -1,0 +1,33 @@
+{
+  "catalog_models": [
+    "gpt-4o-image"
+  ],
+  "actions": {
+    "gpt-4o-image/text-to-image": {
+      "model": "GPT-4o Image",
+      "endpoint": "text_to_image",
+      "models": [
+        "gpt-4o-image"
+      ],
+      "fields_by_model": {
+        "gpt-4o-image": {
+          "aspect_ratio": {
+            "enum": [
+              "1:1",
+              "3:2",
+              "2:3"
+            ],
+            "required": true
+          },
+          "output_count": {
+            "enum": [
+              1,
+              2,
+              4
+            ]
+          }
+        }
+      }
+    }
+  }
+}

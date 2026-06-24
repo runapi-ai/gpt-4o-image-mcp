@@ -1,0 +1,14 @@
+{
+  "endpoints": {
+    "gpt-4o-image/text_to_image": {
+      "unit_price_cents": 6,
+      "billing_config": {
+        "key": "output_count",
+        "overrides": {
+          "2": 7,
+          "4": 8
+        }
+      }
+    }
+  }
+}
