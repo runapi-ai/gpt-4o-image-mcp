@@ -1,7 +1,7 @@
 {
   "name": "@runapi.ai/gpt-4o-image-mcp",
-  "version": "0.1.0",
-  "description": "RunAPI MCP server for one model line: create tasks, poll status, and check pricing with one API key.",
+  "version": "0.1.1",
+  "description": "GPT-4o Image MCP server for RunAPI — create GPT-4o Image AI tasks (text to image), poll status, and check pricing across 1 model with one API key.",
   "type": "module",
   "main": "dist/src/index.js",
   "bin": {
@@ -27,7 +27,14 @@
     "runapi",
     "mcp",
     "model-context-protocol",
-    "ai"
+    "ai",
+    "gpt-4o-image",
+    "gpt-4o-image-mcp",
+    "gpt-4o-image-ai",
+    "gpt-4o-image-api",
+    "image-generation",
+    "ai-image",
+    "text-to-image"
   ],
   "author": "RunAPI",
   "license": "Apache-2.0",
