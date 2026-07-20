@@ -6,12 +6,20 @@
     "gpt-4o-image/text-to-image": {
       "model": "GPT-4o Image",
       "endpoint": "text_to_image",
+      "task_type": "asynchronous",
       "models": [
         "gpt-4o-image"
       ],
       "fields_by_model": {
         "gpt-4o-image": {
+          "model": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
           "aspect_ratio": {
+            "type": "string",
             "enum": [
               "1:1",
               "3:2",
@@ -19,12 +27,26 @@
             ],
             "required": true
           },
+          "source_image_urls": {
+            "type": "array",
+            "max_items": 5
+          },
+          "mask_url": {
+            "type": "string"
+          },
           "output_count": {
+            "type": "integer",
             "enum": [
               1,
               2,
               4
             ]
+          },
+          "callback_url": {
+            "type": "string"
+          },
+          "enable_prompt_expansion": {
+            "type": "boolean"
           }
         }
       }

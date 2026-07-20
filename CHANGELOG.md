@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.1.7](https://github.com/runapi-ai/gpt-4o-image-mcp/releases/tag/v0.1.7) - 2026-07-20
+
+### Fixed
+- Validate the generated maximum source image count before creating a task.
+
+
 ## [v0.1.6](https://github.com/runapi-ai/gpt-4o-image-mcp/releases/tag/v0.1.6) - 2026-07-08
 
 ### Fixed
